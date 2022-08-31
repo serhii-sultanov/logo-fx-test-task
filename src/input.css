@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    body {
+        font-family: 'AvenirNextLTPro-It';
+        color: #16113D;
+        width: 100vw;
+    }
+    .carousel {
+        overflow: hidden;
+    }
+    .slick-slide {
+        width: 100%;
+    }
+}

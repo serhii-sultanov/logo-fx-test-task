@@ -1,0 +1,145 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        link(rel="stylesheet", href="./icons/icons.css")
+        link(rel="stylesheet", href="./fonts/font.css")
+        link(rel="stylesheet", href="./css/slick-theme.css")
+        link(rel="stylesheet", href="./css/slick.css")
+        link(rel="stylesheet", href="./dist/output.css")
+        title Document
+    body 
+        div(class="bg-bgmain flex")
+            div(class="order-last w-9/12 pl-5 mobile:w-full mobile:px-4 mobile:py-3") 
+                header(class="flex justify-between items-center pl-4 pr-7 h-16 w-full mobile:p-0")
+                    div(class="flex items-center")
+                        div(class="hidden w-4 h-4 justify-between mobile:flex mobile:flex-col mr-4")
+                            span(class="h-0.5 w-full bg-black") 
+                            span(class="h-0.5 w-2/3 bg-black") 
+                            span(class="h-0.5 w-full bg-black") 
+                        button(class="w-28 bg-purple rounded-lg h-8 text-white text-xs font-semibold mr-8") Go Live 
+                        a(href="#" class="icon-download text-xs flex items-center font-semibold mr-8 mobile:hidden") Download Terminal 
+                        a(href="#" class="icon-support flex items-center text-xs font-semibold mobile:hidden") Support
+                    div(class="flex items-center") 
+                        button(class="icon-theme mr-7 mobile:hidden")
+                        button(class="mr-7 w-5 mobile:mr-5")
+                            img(src="./svg/flag.svg", alt="flag" class="w-full")
+                        button(class="icon-notifications mr-7 relative after:content-['2'] after:text-xs after:text-white after:px-1 after:bg-orange after:font-semibold after:rounded-full after:absolute after:-top-2 after:-right-1.5 mobile:mr-5")
+                        div(class="flex items-center mobile:w-8")
+                            img(src="./img/user.png", alt="user" class="mr-2")
+                            div(class="flex flex-col")
+                                span(class="text-xs font-semibold mobile:hidden") Artem Zhushman 
+                                span(class="text-xs font-medium text-graylarge mobile:hidden") Retail
+                main(class="pr-5 mobile:p-0") 
+                    section(class="flex mb-5 mobile:block") 
+                        div(class="bg-bgbox p-18px mr-5 basis-4/7 rounded-xl mobile:m-0 mobile:w-full")
+                            h2(class="text-lg font-semibold mb-2") Thank you for opening an account with Kenmore Fx
+                            p(class="text-xs text-graylarge w-11/12") Complete account management at your fingertips: from downloads, electronic deposits and withdrawals, to advanced partnership automation and analytics. Start by downloading our Trading Terminal for your computer and making a deposit.
+                        div(class="bg-bgbox p-18px basis-3/7 rounded-xl  bg-attention bg-no-repeat bg-right-bottom bg-contain mobile:hidden")
+                            h2(class="text-lg font-semibold mb-2") Alerts
+                            p(class="text-xs text-graylarge mb-2.5") Its a good! You don’t have alerts
+                            button(class="w-32 bg-purple h-8 text-xs text-white font-semibold rounded-lg") Make a Deposit
+                    section(class="bg-bgbox p-18px rounded-xl mb-5")
+                        h2(class="text-lg font-semibold mb-3") Account verification
+                        div(class="pl-2 pr-12 mobile:px-8")
+                            div(class="flex justify-between")
+                                div(class="flex flex-col items-center")
+                                    div(class="z-0 mb-2 w-9 h-9 relative after:content-[''] after:block after:h-0.5 after:bg-graysmall after:absolute after:top-1/2 after:left-1/2 after:w-28vw after:-z-10") 
+                                        img(src="./img/mail-ver.png" alt="mail" class="w-full z-20")
+                                    h3(class="text-sm font-bold mb-1.5 mobile:hidden") Email Verification
+                                    p(class="text-xs text-graylarge w-5/6 text-center mobile:hidden") You have completed verification email 
+                                div(class="flex flex-col items-center")
+                                    div(class="z-0 mb-2 w-9 h-9 relative after:content-[''] after:block after:h-0.5 after:bg-graysmall after:absolute after:top-1/2 after:left-1/2 after:w-28vw after:-z-10") 
+                                        img(src="./img/docs-ver.png" alt="documents" class="w-full")
+                                    h3(class="text-sm font-bold mb-1.5") Document Verification 
+                                    p(class="text-xs text-graylarge mb-2") Upload KYC documents
+                                    button(class="w-135px h-8 bg-orange text-white text-xs font-semibold rounded-lg") Upload Docs
+                                div(class="flex flex-col items-center")
+                                    div(class="z-0 mb-2")
+                                        img(src="./img/bonus.png" alt="bonus" class="w-full")
+                                    h3(class="text-sm font-bold mb-1.5 mobile:hidden") Claim Bonus
+                                    p(class="text-xs text-graylarge mb-2 mobile:hidden") Claim Deposit bonus
+                                    button(class="w-135px text-xs text-white font-semibold bg-graymedium rounded-lg h-8 mobile:hidden") Get Bonus
+                    section(class="w-full") 
+                        h2(class="text-lg font-semibold mb-3") Accounts
+                        div(class="carousel-achievements")
+                            div
+                                div(class="w-19vw bg-bgbox p-18px rounded-xl flex justify-between mr-5")
+                                    div(class="flex flex-col")
+                                        div(class="flex items-center mb-18px") 
+                                            span(class="block w-3 h-3 bg-purplelight rounded mr-2")
+                                            h3(class="font-semibold") Trading
+                                        div(class="flex items-center mb-0.5")
+                                            a(href="#" class="icon-arrow mr-2")
+                                            a(href="#" class="font-semibold") 901071514
+                                        span(class="ml-5 text-xs text-graylarge") Gold MT4
+                                    div(class="flex flex-col items-end")
+                                        button(class="icon-deposit flex justify-around items-center text-xs font-semibold px-1 w-24 bg-green text-white h-8 rounded-md mb-2.5") Deposit
+                                        span(class="font-semibold mb-0.5") $300.00
+                                        span(class="text-xs text-graylarge") 2 years
+                            div            
+                                div(class="w-19vw bg-bgbox p-18px rounded-xl flex justify-between mr-5")
+                                    div(class="flex flex-col")
+                                        div(class="flex items-center mb-18px") 
+                                            span(class="block w-3 h-3 bg-orange rounded mr-2")
+                                            h3(class="font-semibold") IB
+                                        div(class="flex items-center mb-0.5")
+                                            a(href="#" class="icon-arrow mr-2")
+                                            a(href="#" class="font-semibold") 901071514
+                                        span(class="ml-5 text-xs text-graylarge") Gold MT4
+                                    div(class="flex flex-col items-end")
+                                        button(class="icon-withdraw flex justify-around items-center text-xs font-semibold px-1 w-24 border border-purple text-purple h-8 rounded-md mb-2.5") Deposit
+                                        span(class="font-semibold mb-0.5") $300.00
+                                        span(class="text-xs text-graylarge") 2 years
+                            div
+                                div(class="w-19vw bg-bgbox p-18px rounded-xl flex justify-between mr-5")
+                                    div(class="flex flex-col")
+                                        div(class="flex items-center mb-18px") 
+                                            span(class="block w-3 h-3 bg-green rounded mr-2")
+                                            h3(class="font-semibold") Investors
+                                        div(class="flex items-center mb-0.5")
+                                            a(href="#" class="icon-arrow mr-2")
+                                            a(href="#" class="font-semibold") 901071514
+                                        span(class="ml-5 text-xs text-graylarge") Gold MT4
+                                    div(class="flex flex-col items-end")
+                                        button(class="icon-withdraw flex justify-around items-center text-xs font-semibold px-1 w-24 border border-purple text-purple h-8 rounded-md mb-2.5") Deposit
+                                        span(class="font-semibold mb-0.5") $300.00
+                                        span(class="text-xs text-graylarge") 2 years
+                            div
+                                div(class="w-19vw bg-bgbox p-18px rounded-xl flex justify-between mr-5")
+                                    div(class="flex flex-col")
+                                        div(class="flex items-center mb-18px") 
+                                            span(class="block w-3 h-3 bg-green rounded mr-2")
+                                            h3(class="font-semibold") Investors
+                                        div(class="flex items-center mb-0.5")
+                                            a(href="#" class="icon-arrow mr-2")
+                                            a(href="#" class="font-semibold") 901071514
+                                        span(class="ml-5 text-xs text-graylarge") Gold MT4
+                                    div(class="flex flex-col items-end")
+                                        button(class="icon-withdraw flex justify-around items-center text-xs font-semibold px-1 w-24 border border-purple text-purple h-8 rounded-md mb-2.5") Deposit
+                                        span(class="font-semibold mb-0.5") $300.00
+                                        span(class="text-xs text-graylarge") 2 years
+            aside(class="w-1/4 px-11 pt-6 bg-bgbox mobile:hidden")
+                img(src="./img/logo.png", alt="logo" class="mb-8")
+                ul 
+                    li(class="icon-dashboard mb-9 flex items-center")
+                        a(class="text-sm font-medium ml-3 flex justify-between items-center w-full") Dashboard 
+                    li(class="icon-account mb-9 flex items-center")
+                        a(class="text-sm font-medium ml-3 flex justify-between items-center w-full") Open Account
+                            span(class="icon-arrow")
+                    li(class="icon-withdraw mb-9 flex items-center")
+                        a(class="text-sm font-medium ml-3 flex justify-between items-center w-full") Deposit Withdraw 
+                            span(class="icon-arrow")
+                    li(class="icon-history mb-9 flex items-center")
+                        a(class="text-sm font-medium ml-3 flex justify-between items-center w-full") Trading History 
+                    li(class="icon-partnership mb-9 flex items-center")
+                        a(class="text-sm font-medium ml-3 flex justify-between items-center w-full") IB Partnership 
+                            span(class="icon-arrow")
+                    li(class="icon-investments mb-9 flex items-center")
+                        a(class="text-sm font-medium ml-3 flex justify-between items-center w-full") Investments Fund Mgmt
+                            span(class="icon-arrow")
+        script(src="./js/jquery-3.6.0.js")
+        script(src="./js/slick.js")
+        script(src="./js/scripts.js")

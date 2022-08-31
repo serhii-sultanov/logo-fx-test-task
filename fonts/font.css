@@ -1,0 +1,12 @@
+@font-face {
+  font-family: 'AvenirNextLTPro';
+  src: url('AvenirNextLTPro-It.eot');
+  src: url('AvenirNextLTPro-It.eot?#iefix') format('embedded-opentype'),
+       url('AvenirNextLTPro-It.svg#AvenirNextLTPro-It') format('svg'),
+       url('AvenirNextLTPro-It.ttf') format('truetype'),
+       url('AvenirNextLTPro-It.woff') format('woff'),
+       url('AvenirNextLTPro-It.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
