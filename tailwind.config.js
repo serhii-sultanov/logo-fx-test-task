@@ -30,7 +30,7 @@ module.exports = {
         "4/7": "55%",
       },
       backgroundImage: {
-        attention: "url(../img/attention.png)",
+        attention: "url(../img/groupp.svg)",
       },
     },
   },

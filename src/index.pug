@@ -10,8 +10,8 @@ html(lang="en")
         link(rel="stylesheet", href="./css/slick.css")
         link(rel="stylesheet", href="./dist/output.css")
         title Document
-    body 
-        div(class="bg-bgmain flex")
+    body(class="bg-bgmain") 
+        div(class="flex")
             div(class="order-last w-9/12 pl-5 mobile:w-full mobile:px-4 mobile:py-3") 
                 header(class="flex justify-between items-center pl-4 pr-7 h-16 w-full mobile:p-0")
                     div(class="flex items-center")
@@ -19,16 +19,16 @@ html(lang="en")
                             span(class="h-0.5 w-full bg-black") 
                             span(class="h-0.5 w-2/3 bg-black") 
                             span(class="h-0.5 w-full bg-black") 
-                        button(type="button" class="w-28 bg-purple rounded-lg h-8 text-white text-xs font-semibold mr-8") Go Live 
-                        a(href="#" class="icon-download text-xs flex items-center font-semibold mr-8 mobile:hidden") Download Terminal 
-                        a(href="#" class="icon-support flex items-center text-xs font-semibold mobile:hidden") Support
+                        button(type="button" class="w-28 bg-purple rounded-lg h-8 text-white text-xs font-semibold mr-8 hover:opacity-90") Go Live 
+                        a(href="#" class="icon-download text-xs flex items-center font-semibold mr-8 mobile:hidden hover:opacity-70") Download Terminal 
+                        a(href="#" class="icon-support flex items-center text-xs font-semibold mobile:hidden hover:opacity-70") Support
                     div(class="flex items-center") 
                         button(type="button" class="icon-theme mr-7 mobile:hidden")
                         button(type="button" class="mr-7 w-5 mobile:mr-5")
                             img(src="./svg/flag.svg", alt="flag" class="w-full")
                         button(type="button" class="icon-notifications mr-7 relative after:content-['2'] after:text-xs after:text-white after:px-1 after:bg-orange after:font-semibold after:rounded-full after:absolute after:-top-2 after:-right-1.5 mobile:mr-5")
                         div(class="flex items-center mobile:w-8")
-                            img(src="./img/user.png", alt="user" class="mr-2")
+                            img(src="./img/user-a.svg", alt="user" class="mr-2")
                             div(class="flex flex-col")
                                 span(class="text-xs font-semibold mobile:hidden") Artem Zhushman 
                                 span(class="text-xs font-medium text-graylarge mobile:hidden") Retail
@@ -40,30 +40,31 @@ html(lang="en")
                         div(class="bg-bgbox p-18px basis-3/7 rounded-xl  bg-attention bg-no-repeat bg-right-bottom bg-contain mobile:hidden")
                             h2(class="text-lg font-semibold mb-2") Alerts
                             p(class="text-xs text-graylarge mb-2.5") Its a good! You don’t have alerts
-                            button(type="button" class="w-32 bg-purple h-8 text-xs text-white font-semibold rounded-lg") Make a Deposit
+                            button(type="button" class="w-32 bg-purple h-8 text-xs text-white font-semibold rounded-lg hover:opacity-90 hover:scale-105 ease-in duration-200") Make a Deposit
                     section(class="bg-bgbox p-18px rounded-xl mb-5")
                         h2(class="text-lg font-semibold mb-3") Account verification
                         div(class="pl-2 pr-12 mobile:px-8")
                             div(class="flex justify-between")
                                 div(class="flex flex-col items-center")
                                     div(class="z-0 mb-2 w-9 h-9 relative after:content-[''] after:block after:h-0.5 after:bg-graysmall after:absolute after:top-1/2 after:left-1/2 after:w-28vw after:-z-10") 
-                                        img(src="./img/mail-ver.png" alt="mail" class="w-full z-20")
+                                        img(src="./img/mail.svg" alt="mail" class="w-full z-20")
                                     h3(class="text-sm font-bold mb-1.5 mobile:hidden") Email Verification
                                     p(class="text-xs text-graylarge w-5/6 text-center mobile:hidden") You have completed verification email 
                                 div(class="flex flex-col items-center")
                                     div(class="z-0 mb-2 w-9 h-9 relative after:content-[''] after:block after:h-0.5 after:bg-graysmall after:absolute after:top-1/2 after:left-1/2 after:w-28vw after:-z-10") 
-                                        img(src="./img/docs-ver.png" alt="documents" class="w-full")
+                                        img(src="./img/docs.svg" alt="documents" class="w-full")
                                     h3(class="text-sm font-bold mb-1.5") Document Verification 
                                     p(class="text-xs text-graylarge mb-2") Upload KYC documents
-                                    button(type="button" class="w-135px h-8 bg-orange text-white text-xs font-semibold rounded-lg") Upload Docs
+                                    button(type="button" class="w-135px h-8 bg-orange text-white text-xs font-semibold rounded-lg hover:opacity-90 hover:scale-105 ease-in duration-200") Upload Docs
                                 div(class="flex flex-col items-center")
                                     div(class="z-0 mb-2")
-                                        img(src="./img/bonus.png" alt="bonus" class="w-full")
+                                        img(src="./img/bonus.svg" alt="bonus" class="w-full")
                                     h3(class="text-sm font-bold mb-1.5 mobile:hidden") Claim Bonus
                                     p(class="text-xs text-graylarge mb-2 mobile:hidden") Claim Deposit bonus
-                                    button(type="button" class="w-135px text-xs text-white font-semibold bg-graymedium rounded-lg h-8 mobile:hidden") Get Bonus
-                    section(class="w-full") 
-                        h2(class="text-lg font-semibold mb-3") Accounts
+                                    button(type="button" class="w-135px text-xs text-white font-semibold bg-graymedium rounded-lg h-8 mobile:hidden hover:bg-graylarge hover:opacity-70 hover:scale-105 ease-in duration-200") Get Bonus
+                    section(class="w-full relative") 
+                        h2(class="text-lg font-semibold ml-18px mb-3") Accounts
+                        span(class="icon-arrow-left absolute top-1/2 right-5 w-3 z-50 mobile:hidden")
                         div(class="carousel-achievements")
                             div
                                 div(class="w-19vw bg-bgbox p-18px rounded-xl flex justify-between mr-5")
@@ -76,7 +77,7 @@ html(lang="en")
                                             a(href="#" class="font-semibold") 901071514
                                         span(class="ml-5 text-xs text-graylarge") Gold MT4
                                     div(class="flex flex-col items-end")
-                                        button(type="button" class="icon-deposit flex justify-around items-center text-xs font-semibold px-1 w-24 bg-green text-white h-8 rounded-md mb-2.5") Deposit
+                                        button(type="button" class="icon-deposit flex justify-around items-center text-xs font-semibold px-1 w-24 bg-green text-white h-8 rounded-md mb-2.5 hover:opacity-90 hover:scale-105 ease-in duration-200") Deposit
                                         span(class="font-semibold mb-0.5") $300.00
                                         span(class="text-xs text-graylarge") 2 years
                             div            
@@ -90,7 +91,7 @@ html(lang="en")
                                             a(href="#" class="font-semibold") 901071514
                                         span(class="ml-5 text-xs text-graylarge") Gold MT4
                                     div(class="flex flex-col items-end")
-                                        button(type="button" class="icon-withdraw flex justify-around items-center text-xs font-semibold px-1 w-24 border border-purple text-purple h-8 rounded-md mb-2.5") Transfer
+                                        button(type="button" class="icon-withdraw flex justify-around items-center text-xs font-semibold px-1 w-24 border border-purple text-purple h-8 rounded-md mb-2.5 hover:opacity-90 hover:scale-105 ease-in duration-200") Transfer
                                         span(class="font-semibold mb-0.5") $300.00
                                         span(class="text-xs text-graylarge") 2 years
                             div
@@ -104,7 +105,7 @@ html(lang="en")
                                             a(href="#" class="font-semibold") 901071514
                                         span(class="ml-5 text-xs text-graylarge") Gold MT4
                                     div(class="flex flex-col items-end")
-                                        button(class="icon-withdraw flex justify-around items-center text-xs font-semibold px-1 w-24 border border-purple text-purple h-8 rounded-md mb-2.5") Transfer
+                                        button(class="icon-withdraw flex justify-around items-center text-xs font-semibold px-1 w-24 border border-purple text-purple h-8 rounded-md mb-2.5 hover:opacity-90 hover:scale-105 ease-in duration-200") Transfer
                                         span(class="font-semibold mb-0.5") $300.00
                                         span(class="text-xs text-graylarge") 2 years
                             div
@@ -118,27 +119,27 @@ html(lang="en")
                                             a(href="#" class="font-semibold") 901071514
                                         span(class="ml-5 text-xs text-graylarge") Gold MT4
                                     div(class="flex flex-col items-end")
-                                        button(type="button" class="icon-withdraw flex justify-around items-center text-xs font-semibold px-1 w-24 border border-purple text-purple h-8 rounded-md mb-2.5") Transfer
+                                        button(type="button" class="icon-withdraw flex justify-around items-center text-xs font-semibold px-1 w-24 border border-purple text-purple h-8 rounded-md mb-2.5 hover:opacity-90 hover:scale-105 ease-in duration-200") Transfer
                                         span(class="font-semibold mb-0.5") $300.00
                                         span(class="text-xs text-graylarge") 2 years
             aside(class="w-1/4 px-11 pt-6 bg-bgbox mobile:hidden")
                 img(src="./img/logo.png", alt="logo" class="mb-8")
                 ul 
-                    li(class="icon-dashboard mb-9 flex items-center")
-                        a(class="text-sm font-medium ml-3 flex justify-between items-center w-full") Dashboard 
-                    li(class="icon-account mb-9 flex items-center")
-                        a(class="text-sm font-medium ml-3 flex justify-between items-center w-full") Open Account
+                    li(class="icon-dashboard mb-9 flex items-center hover:text-purplelight")
+                        a(href="#" class="text-sm font-medium ml-3 flex justify-between items-center w-full text-purple") Dashboard 
+                    li(class="icon-account mb-9 flex items-center  hover:text-purplelight")
+                        a(href="#" class="text-sm font-medium ml-3 flex justify-between items-center w-full") Open Account
                             span(class="icon-arrow")
-                    li(class="icon-withdraw mb-9 flex items-center")
-                        a(class="text-sm font-medium ml-3 flex justify-between items-center w-full") Deposit Withdraw 
+                    li(class="icon-withdraw mb-9 flex items-center  hover:text-purplelight")
+                        a(href="#" class="text-sm font-medium ml-3 flex justify-between items-center w-full") Deposit Withdraw 
                             span(class="icon-arrow")
-                    li(class="icon-history mb-9 flex items-center")
-                        a(class="text-sm font-medium ml-3 flex justify-between items-center w-full") Trading History 
-                    li(class="icon-partnership mb-9 flex items-center")
-                        a(class="text-sm font-medium ml-3 flex justify-between items-center w-full") IB Partnership 
+                    li(class="icon-history mb-9 flex items-center  hover:text-purplelight")
+                        a(href="#" class="text-sm font-medium ml-3 flex justify-between items-center w-full") Trading History 
+                    li(class="icon-partnership mb-9 flex items-center  hover:text-purplelight")
+                        a(href="#" class="text-sm font-medium ml-3 flex justify-between items-center w-full") IB Partnership 
                             span(class="icon-arrow")
-                    li(class="icon-investments mb-9 flex items-center")
-                        a(class="text-sm font-medium ml-3 flex justify-between items-center w-full") Investments Fund Mgmt
+                    li(class="icon-investments mb-9 flex items-center  hover:text-purplelight")
+                        a(href="#" class="text-sm font-medium ml-3 flex justify-between items-center w-full") Investments Fund Mgmt
                             span(class="icon-arrow")
         script(src="./js/jquery-3.6.0.js")
         script(src="./js/slick.js")

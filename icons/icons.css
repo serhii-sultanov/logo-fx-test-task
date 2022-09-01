@@ -27,7 +27,6 @@
 
 .icon-account:before {
   content: "\e900";
-  color: #16113d;
 }
 .icon-arrow:before {
   content: "\e901";
@@ -140,11 +139,9 @@
 }
 .icon-history:before {
   content: "\e918";
-  color: #16113d;
 }
 .icon-investments:before {
   content: "\e919";
-  color: #16113d;
 }
 .icon-notifications:before {
   content: "\e91a";
@@ -152,7 +149,6 @@
 }
 .icon-partnership:before {
   content: "\e91b";
-  color: #16113d;
 }
 .icon-support:before {
   content: "\e91c";
